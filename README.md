@@ -20,9 +20,9 @@ Um clone da interface da Netflix desenvolvido para Android, implementando alguns
 |--------------|-----------------------|
 | ![Tela Inicial](1.png) | ![Detalhes](2.png) |
 
-| Player de Vídeo | Perfis de Usuário | 
-|------------------|--------------------|
-| ![Player](3.png) | ![Perfis](4.png) |
+| Detalhes do Conteúdo | Detalhes do Conteúdo | 
+|----------------------|----------------------|
+|   ![Player](3.png)   |  ![Perfis](4.png)    |
 
 ## ⚙️ Instalação
 
