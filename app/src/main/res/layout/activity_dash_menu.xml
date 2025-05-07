@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#161515"
+    android:orientation="vertical"
+    tools:context=".DashMenuActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/onepiece" />
+
+    <TextView
+        android:id="@+id/textOnepiece"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="One Piece"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:background="@drawable/text_background"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="293dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/lorem"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:background="@drawable/text_background"
+        app:layout_constraintStart_toStartOf="@+id/textOnepiece"
+        app:layout_constraintTop_toBottomOf="@+id/textOnepiece" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonInfo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/baseline_info_24"
+        android:text="Mais Informações"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="Outras Séries"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imgBreakingBad"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/breakingbad" />
+
+    <ImageView
+        android:id="@+id/imageBroo"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgBreakingBad"
+        app:layout_constraintTop_toTopOf="@+id/imgBreakingBad"
+        app:srcCompat="@drawable/brooklyn" />
+
+    <ImageView
+        android:id="@+id/imageHouse"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgBreakingBad"
+        app:layout_constraintStart_toStartOf="@+id/imgBreakingBad"
+        app:layout_constraintTop_toBottomOf="@+id/imgBreakingBad"
+        app:srcCompat="@drawable/drhouse" />
+
+    <ImageView
+        android:id="@+id/imageOffice"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageBroo"
+        app:layout_constraintStart_toStartOf="@+id/imageBroo"
+        app:layout_constraintTop_toBottomOf="@+id/imageBroo"
+        app:srcCompat="@drawable/theoffice" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
